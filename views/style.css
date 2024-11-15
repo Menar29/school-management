@@ -1,0 +1,348 @@
+/* Réinitialisation et style de base */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #081b29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #0ef;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c800ff;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #081b29;
+    border-bottom: 2px solid #00ffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #0ef;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #0ef;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c800ff;
+}
+
+/* Style de la page avec des cartes */
+.section {
+    padding: 5rem 0;
+}
+
+.card {
+    background: #081b29;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 30px rgba(0, 166, 188, 0.5);
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #0ef;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 0;
+}
+
+/* Bouton de soumission */
+.btn-outline-dark {
+    background-color: #3282F6;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #0ef;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.7);
+}
+
+/* Bouton "Ajouter" */
+.btn-outline-dark.add-btn {
+    background: linear-gradient(45deg, #0ef, #c800ff);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-outline-dark.add-btn:hover {
+    background-color: #3282F6;
+    box-shadow: 0 0 15px rgba(50, 130, 246, 0.7);
+}
+
+/* Wrapper de la page */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
+    height: 80vh;
+    margin-top: 20px;
+}
+
+/* Bandeau de bienvenue */
+.banner {
+    background: linear-gradient(to right, #0ef, #c800ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 40px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+}
+.custom-header {
+    background: linear-gradient(45deg, #0ef, #c800ff); /* Gradient de couleur */
+    color: #fff; /* Assurez-vous que le texte est visible */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    box-sizing: border-box; /* Assurer un bon calcul du padding */
+}
+
+/* Texte de bienvenue */
+.wel_text {
+    font-size: 3rem;
+    color: #081b29; /* Couleur sombre */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Les boutons */
+.d-flex .btn {
+    margin: 10px;
+    padding: 12px 30px;
+}
+
+.wel_text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #081b29;
+}
+
+.para {
+    font-size: 1rem;
+    color: #081b29;
+    letter-spacing: 1px;
+}
+
+/* Formulaire */
+.form {
+    background: #081b29;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 30px rgba(0, 166, 188, 0.5);
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+/* Styles des champs de formulaire et labels */
+.form-floating {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #0ef;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label,
+.form-floating select:focus ~ label,
+.form-floating select:not([value=""]) ~ label {
+    top: 0;
+    left: 5px;
+    font-size: 12px;
+    color: #c800ff;
+}
+
+.form-control {
+    background: none;
+    border: 1px solid #0ef;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #c800ff;
+    outline: none;
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Bouton de soumission */
+.submit {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    background: linear-gradient(45deg, #0ef, #c800ff);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: linear-gradient(45deg, #c800ff, #0ef);
+    box-shadow: 0 0 15px rgba(200, 0, 255, 0.5);
+}
+
+/* Style général de la page */
+body {
+    background-color: #081b29; /* Fond sombre */
+    color: #fff; /* Texte en blanc pour contraster */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0ef; /* Titre en bleu clair (remplacer si tu as une autre couleur dans style.css) */
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #0ef; /* Couleur des liens (remplacer si tu as une autre couleur dans style.css) */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c800ff; /* Couleur au survol des liens */
+}
+
+/* Style pour le tableau */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #00ffff; /* Bordure cyan (remplacer si tu utilises une autre couleur pour les bordures) */
+}
+
+th {
+    background-color: #081b29;
+    color: #0ef; /* Tête du tableau en bleu clair */
+    font-size: 1.2rem;
+}
+
+td {
+    background-color: #181f29;
+}
+
+tr:nth-child(even) {
+    background-color: #131a21; /* Lignes paires légèrement plus sombres */
+}
+
+tr:hover {
+    background-color: #0ef; /* Changer la couleur de fond au survol */
+    color: #081b29; /* Texte en sombre au survol */
+}
+
+td a {
+    color: #c800ff; /* Couleur des liens dans le tableau */
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #fff; /* Couleur des liens au survol */
+    text-decoration: underline; /* Sous-ligne au survol */
+}
+
+/* Style des boutons "Ajouter" et autres liens */
+button, .btn {
+    background: linear-gradient(45deg, #0ef, #c800ff);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(45deg, #c800ff, #0ef);
+}
+
+/* Espacement pour les liens "Ajouter" */
+p a {
+    background: linear-gradient(45deg, #0ef, #c800ff);
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+p a:hover {
+    background-color: #3282F6; /* Changer au survol */
+    box-shadow: 0 0 15px rgba(50, 130, 246, 0.7);
+}
