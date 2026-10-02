@@ -1,0 +1,4 @@
+config.local.php
+logs/*
+!logs/.htaccess
+sauvegardes/
